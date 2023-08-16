@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicional</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <div id="container">
+        <div>
+            <input type="checkbox" onclick="ligarinput(1)" id="padrao"/> Conjunto Padrao
+            <input type="number" id="qtdepadrao" disabled="true"/>
+        </div>
+        <div>
+            <input type="checkbox" onclick="ligarinput(2)" id="kit"/> Kit Alimentação
+            <input type="number" id="qtdekit" disabled="true"/>
+        </div>
+        <div>
+            <input type="checkbox" onclick="ligarinput(3)" id="suplemento"/> Suplemento
+            <input type="number" id="qtdesuplemento" disabled="true"/>
+        </div>
+        <div>
+            <input type="checkbox" onclick="ligarinput(4)" id="arroz"/> Arroz
+            <input type="number" id="qtdearroz" disabled="true"/>
+        </div>
+        <div>
+            <button id="adicional" onclick="adicional()">
+            Calcular os pontos</button>
+        </div>
+        <div>
+            <p id="total"> </p>
+        </div>
+        <div>
+            <p id="total1"> </p>
+        </div>
+    </div>
+    <script src="condiocional.js"></script>
+</body>
+</html>
